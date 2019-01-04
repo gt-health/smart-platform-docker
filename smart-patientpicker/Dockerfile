@@ -14,3 +14,5 @@ RUN cp -r /usr/share/nginx/html/smart-patientpicker/vendor /usr/share/nginx/html
 #run sed on the deployed js files to replace patient POST with GET
 RUN sed -i 's/POST/GET/g' /usr/share/nginx/html/smart-patientpicker/js/index.js
 RUN sed -i 's/POST/GET/g' /usr/share/nginx/html/smart-patientpicker/js/index.js.*.map
+RUN cp /usr/share/nginx/html/index.html /usr/share/nginx/html/smart-patientpicker/index.html
+RUN cp /usr/share/nginx/html/50x.html /usr/share/nginx/html/smart-patientpicker/50x.html
