@@ -12,4 +12,4 @@ COPY auth.properties WEB-INF/classes/config/auth.properties
 RUN jar uvf app.war WEB-INF/classes/config/auth.properties
 
 ENV JAVA_OPTS=""
-ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Dspring.profiles.active=local,users-local -jar jetty-runner.jar --config jetty.xml app.war" ]
+ENTRYPOINT [ "sh", "-c", "java $JAVA_OPTS -Dspring.profiles.active=local,users-local -jar jetty-runner.jar --config jetty.xml --path /smart-oauth app.war" ]

@@ -25,7 +25,6 @@
                         </Item>
                     </Array>
                 </Arg>
-                <Set name="contextPath">/smart-oauth</Set>
                 <Set name="host">0.0.0.0</Set>
                 <Set name="port">8060</Set>
             </New>
