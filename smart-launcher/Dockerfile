@@ -2,7 +2,7 @@ FROM smartonfhir/smart-launcher
 ENV NODE_ENV="production"
 ENV LAUNCHER_BASE_URL="https://smartlauncher.apps.hdap.gatech.edu/"
 ENV BASE_URL="https://smartlauncher.apps.hdap.gatech.edu/"
-ENV FHIR_SERVER_R3="https://apps.hdap.gatech.edu/gt-fhir/fhir"
+ENV FHIR_SERVER_R3="https://apps.hdap.gatech.edu/gt-fhir-smart/fhir"
 ENV FHIR_SERVER_R3_INTERNAL="https://apps.hdap.gatech.edu/gt-fhir-smart/fhir"
 ENV DISABLE_SANDBOXES="true"
 ENV CDS_SANDBOX_URL="https://sandbox.cds-hooks.org"
